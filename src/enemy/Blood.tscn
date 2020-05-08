@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/icon.png" type="Texture" id=1]
+[ext_resource path="res://src/enemy/Blood.gd" type="Script" id=2]
+
+[node name="Blood" type="CPUParticles2D"]
+position = Vector2( 0, 1.1376 )
+z_index = -10
+amount = 10
+lifetime = 0.3
+explosiveness = 1.0
+texture = ExtResource( 1 )
+spread = 20.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 300.0
+initial_velocity_random = 1.0
+angular_velocity = 360.0
+angular_velocity_random = 1.0
+scale_amount = 0.1
+color = Color( 0.945098, 0.823529, 0.0196078, 1 )
+script = ExtResource( 2 )
+
+[node name="Freeze_blood" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[node name="Delete_blood" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+[connection signal="timeout" from="Freeze_blood" to="." method="_on_Freeze_blood_timeout"]
+[connection signal="timeout" from="Delete_blood" to="." method="_on_Delete_blood_timeout"]

@@ -2,7 +2,6 @@ extends Node
 
 var node_creation_parent = null
 var player = null
-
 var points = 0
 
 func instance_node(node, location, parent):

@@ -7,3 +7,6 @@ func _on_Freeze_blood_timeout():
 	set_process_internal(false)
 	set_process_unhandled_input(false)
 	set_process_unhandled_key_input(false)
+
+func _on_Delete_blood_timeout():
+	queue_free()
