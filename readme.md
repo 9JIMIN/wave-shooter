@@ -8,8 +8,6 @@ I learned a lot from Parker Anderson's great tutorial. thank you!!
 
 followed the tutorial >> [Play list](https://www.youtube.com/playlist?list=PL6bQeQE-ybqAYoaWz_ZEE2X4wX6PhwCWR)
 
-![Alt Text](gif/after-tutorial.gif)
-this is the result of tutorial. and..
 
 ![Alt Text](gif/clone.gif)
 this is the my clone version. 
